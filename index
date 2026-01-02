@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Môj obchod</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Môj obchod</h1>
+
+<div id="products"></div>
+
+<a href="cart.html">🛒 Košík</a>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>
