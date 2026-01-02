@@ -1,0 +1,27 @@
+const products = [
+  {
+    id: 1,
+    name: "Tričko",
+    price: 20,
+    image: "https://via.placeholder.com/200"
+  },
+  {
+    id: 2,
+    name: "Mikina",
+    price: 45,
+    image: "https://via.placeholder.com/200"
+  }
+];
+
+const container = document.getElementById("products");
+
+products.forEach(p => {
+  container.innerHTML += `
+    <div class="product">
+      <img src="${p.image}">
+      <h3>${p.name}</h3>
+      <p>${p.price} €</p>
+      <button onclick="addToCart(${p.id})">Pridať do košíka</button>
+    </div>
+  `;
+});
